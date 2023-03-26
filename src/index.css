@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  text-align: center;
+}
+
+.Cardss {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card_image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  margin: 0px;
+  transition: height 0.2s ease-in 0.2s;
+}
+
+.card {
+  margin: 3vh 5vw;
+  width: 200px;
+  height: 300px;
+  transition: all 0.3s ease;
+  border: 2px solid wheat;
+  border-radius: 5px;
+  background: whitesmoke;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background: rgb(165, 94, 94);
+}
+
+
+.card_title {
+  margin: 0px 0px 0px 5px;
+}
+
+.btn {
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(95, 95, 224);
+  color: white;
+  font-weight: bold;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .Cardss {
+    display: block;
+  }
+
+  .card {
+    position: relative;
+    left: 40px;
+  }
+}
